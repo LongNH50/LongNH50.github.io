@@ -1,0 +1,101 @@
+.container{
+    margin: 0 auto;
+    width: 70%;
+    height: 1000px;
+    background-color: cornsilk;
+
+}
+h1,h3{
+    color: dodgerblue;
+    font-family: sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+/* p::first-letter{
+    font-size: 1.5em;
+} */
+
+.header{
+    width: 100%;
+    height: 10%;
+    border-bottom: 2px solid black ;
+    /* background-color: gray; */
+}
+
+.content{
+    display: block;
+    width: 100%;
+    height: 80%;
+    /* background-color: darkgray; */
+}
+
+.classContent{
+    height: 20%;
+    /* background-color: aquamarine; */
+}
+
+
+
+
+
+.moviesContent{
+    height: 40%;
+    /* background-color: azure; */
+    /* margin-top: 0%; */
+}
+.moviesContent ul{
+    list-style-type: none;
+}
+
+.title{
+    color:rgb(199, 146, 32);
+}
+
+.title ul span {
+    color: black;
+}
+
+/* .moviesContent ol>li{
+     display: flex;
+    flex-direction: column-reverse;
+} */
+
+
+
+
+
+
+
+.moodsContent{
+    /* display: flex;     */
+    height: 30%;
+    width: 100%;
+    /* background-color: cornsilk; */
+}
+
+.imagesMoods{
+    display: flex;
+}
+.happyImage img{
+    width: 50%;
+    height: 55%;
+
+}
+
+.sadImage img{
+    width: 45%;
+    height: 55%;
+}
+
+
+.neighborsContent{
+    height: 20%;
+    /* background-color: aliceblue; */
+}
+
+
