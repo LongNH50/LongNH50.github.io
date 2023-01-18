@@ -64,9 +64,10 @@ a{
 }
 .copyright{
     font-family: monospace;
-    text-align: right;
+    text-align: left;
+    /* float: right; */
 }
-#content::before{
+.content::before{
     content:"\a";
     white-space: pre;
 }
