@@ -66,4 +66,8 @@ a{
     font-family: monospace;
     text-align: right;
 }
+#content::before{
+    content:"\a";
+    white-space: pre;
+}
 
