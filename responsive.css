@@ -1,0 +1,102 @@
+.container {
+    width: 100%;
+    height: 500px;
+    display: grid;
+    grid-template-areas:
+        'h h h h'
+        'h h h h'
+        'n n n n'
+        'c1 c2 c2 c3'
+        'c1 c2 c2 c3'
+        'c1 c2 c2 c3'
+        'c1 c2 c2 c3'
+        'f f f f'
+        'f f f f'
+
+}
+
+.header {
+    height: 100%;
+    background-color: aqua;
+    grid-area: h;
+    text-align: center;
+    font: 30pt bolder;
+}
+
+.nav {
+    height: 100%;
+    background-color: rgb(12, 95, 95);
+    grid-area: n;
+    display: flex;
+    color: white;
+
+}
+
+.nav1,
+.nav2,
+.nav3 {
+    border-right: 1px solid black;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: ; */
+}
+
+/* .column {
+    height: 100%;
+    width: 100%;
+    grid-area: c;
+    display: flex;
+    background-color: cornsilk;
+    /* justify-content: space-around; */
+
+
+.column1 {
+    height: 100%;
+    width: 100%;
+    background-color: gray;
+    grid-area: c1;
+}
+
+.column2 {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(167, 159, 159);
+    grid-area: c2;
+}
+
+.column3 {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(107, 105, 105);
+    grid-area: c3;
+}
+
+.footer {
+    height: 100%;
+    background-color: rgb(12, 95, 95);
+    color: white;
+    text-align: center;
+    font: 30pt bold;
+    grid-area: f;
+}
+
+@media (max-width:600px) {
+    .container {
+
+        grid-template-areas:
+            'h h h h'
+            'h h h h'
+            'n n n n'
+            'c1 c1 c3 c3'
+            'c1 c1 c3 c3'
+            'c2 c2 c2 c2'
+            'c2 c2 c2 c2'
+            'f f f f'
+            'f f f f'
+    }
+
+    ;
+
+}
