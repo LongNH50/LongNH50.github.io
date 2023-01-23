@@ -86,6 +86,8 @@ function changeSize() {
 }
 
 function changeSpeed() {
+    // var splitAnimation = screen.value.split("=====\n");
+    // currentAnimation = splitAnimation;
     clearInterval(interval);
     var turbo = document.getElementById("turbo")
     if (turbo.checked)
