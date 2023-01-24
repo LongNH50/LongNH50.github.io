@@ -1,0 +1,33 @@
+.container {
+    margin: 0 auto;
+    width: 500px;
+    /* height: 200px; */
+    border: 1px solid grey;
+}
+
+
+input{
+    border: 1px solid grey;
+    border-radius: 5px;
+    
+   
+}
+.email, .pass, .checkbox{
+    margin: 15px 0 20px 10px;
+}
+
+
+
+span{
+    color: grey;
+    font-size: 8pt;
+}
+button{
+    background-color: #024488;
+    color: aliceblue;
+    border: none;
+    border-radius: 5px;
+}
+
+
+
