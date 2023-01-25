@@ -6,12 +6,9 @@ function pageload() {
     var email = document.getElementById("email");
     var password = document.getElementById("password");
     var submit = document.getElementById("submit");
-    submit.onclick( function() {
-        // if (email.value.match(EMAIL_REGEX)) {
-            alert("ok");
-            // console.log
-        // }
-    });
+    submit.onclick = () =>{
+        alert("Hi")
+    }
 
 
 
