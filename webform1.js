@@ -7,7 +7,8 @@ function pageload() {
     var password = document.getElementById("password");
     var submit = document.getElementById("submit");
     submit.onclick = () =>{
-        alert("Hi")
+        alert("Hi");
+        if()
     }
 
 
