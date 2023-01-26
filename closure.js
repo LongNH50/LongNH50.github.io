@@ -43,3 +43,70 @@ var add7 = make_adder(7);
 add7();
 add7()
 console.log(add7());
+
+
+// Using the Revealing Module Pattern, write a JavaScript definition of a Module that creates an 
+// Employee Object with the following fields and methods:
+
+
+var employee = (function(){
+    let name = 'Long';
+    let age = '26';
+    let salary= 1000;
+
+    function getName() {
+        return name;
+    }
+
+    function getAge() {
+        return age;
+    }
+
+    function getSalary() {
+        return salary;
+    }
+
+    function setName(newName) {
+        name = newName;
+    }
+
+    function setAge(newAge) {
+        age = newAge;
+    }
+
+    function setSalary(salary) {
+        this.salary = salary;
+    }
+
+
+
+    return{
+        setName:setName,
+        setAge:setAge,
+        setSalary:setSalary
+    };
+
+
+})();
+
+employee.extension = (function () {
+    let address = '1000 N 4th';
+
+    function setAddress(newAddress) {
+        address = newAddress;
+    }
+
+    function getAddress() {
+        return address;
+    }
+
+    return {
+        getAddress : getAddress,
+        setAddress: setAddress
+    }
+
+})();
+employee.extension.setAddress("414 NB St")
+console.log(employee.extension.getAddress());
+
+
