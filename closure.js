@@ -33,6 +33,7 @@ function make_adder(value) {
     }
 }
 
+
 var add5 = make_adder(5);
 add5();
 add5()
