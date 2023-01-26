@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scopes</title>
+</head>
+
+<body>
+
+    <h3>1. Output is: </h3>
+
+    x = 1; <br>
+    var a =5; <br>
+    var b = 10; <br>
+    var c = function(a,b,c) { <br>
+    console.log(x); //undefined <br>
+    console.log(a); //8 <br>
+    var f = function(a,b,c) {<br>
+    b=a; <br>
+    console.log(b); //8 <br>
+    b=c ; <br>
+    var x = 5; <br>
+    } <br>
+    f(a,b,c); <br>
+    console.log(b); //9 <br>
+    var x = 10; <br>
+    } <br>
+    c(8,9,10); <br>
+    console.log(b); //10 <br>
+    console.log(x); //1 <br>
+
+    <h3>2. Define Global Scope and Local Scope in JavaScript</h3>
+    <p>Global scope: A variable that is defined outside of any function or block has global scope. It can be accessed
+        from anywhere in the program, including inside functions and blocks. </p>
+    <p>Local scope: A variable that is defined inside a function or block has local scope. It can only be accessed from
+        within the function or block where it is defined. </p>
+
+    <h3>3. Answer </h3>
+    //Scope A <br>
+    function xFunc(){ <br>
+    //Scope B <br>
+    function yFunc(){ <br>
+    //Scope C <br>
+    } <br>
+    } <br>
+    <p>a.Do statements in Scope A have access to variables defined in Scope B and C? No
+    </p>
+    <p>b. Do statements in Scope B have access to variables defined in Scope A? Yes</p>
+    <p>c. Do statements in Scope B have access to variables defined in Scope C? No</p>
+    <p>d. Do statements in Scope C have access to variables defined in Scope A? Yes</p>
+    <p>e. Do statements in Scope C have access to variables defined in Scope B? Yes</p>
+
+    <h3>4. Output </h3>
+    var x=9; <br>
+    function myFunction() { <br>
+    return x*x; <br>
+    } <br>
+    console.log(myFunction()); //81 <br>
+    x = 5; <br>
+    console.log(myFunction()); //25 <br>
+
+    <h3>5. Output</h3>
+    var foo = 1; <br>
+    function bar() { <br>
+    if(!foo){ <br>
+    var foo = 10; <br>
+    }
+    alert(foo); //10 <br>
+    } <br>
+    bar(); <br>
+
+</body>
+
+</html>
