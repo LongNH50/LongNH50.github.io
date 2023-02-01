@@ -22,4 +22,8 @@ class Bank{
         return checkingAcc;
     }
 
+    closeAccount(number){
+        this.accounts.pop(this.accounts.filter(acc => acc.number.equals(number)));
+    }
+
 }
